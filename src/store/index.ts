@@ -13,7 +13,9 @@ export const rootReducer = combineReducers({
 
 export const persisReducer =persistReducer(persistConfig,rootReducer)
 export const store = configureStore({
-    reducer: persisReducer,
+  reducer: persisReducer,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({ serializableCheck: false }),
 })
 
 export const persistor =persistStore(store)
