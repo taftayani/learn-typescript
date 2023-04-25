@@ -1,4 +1,4 @@
-name :TypescriptPipeline
+name: TypescriptPipeline
 
 on:  
   push:
