@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 jobs:
-  typescriptTest:
+  build:
     name: Typescript,
     runs-on: ubuntu-latest,
     steps:
