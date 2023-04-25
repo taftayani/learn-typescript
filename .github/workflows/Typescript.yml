@@ -1,0 +1,22 @@
+name :TypescriptPipeline
+
+on:  
+  push:
+    branches: [develop]
+
+jobs:
+  typescriptTest:
+    name: Typescript,
+    runs-on: ubuntu-latest,
+    steps:
+      - name: Clone Repo
+        uses: actions/checkout@v2
+      - name: Install Depedencies
+        run: |
+          echo "Running install depedencies..."
+          npm install
+      - name: Run Linting
+        run: |
+          echo "Running linting format code"
+          npm run lint
+  

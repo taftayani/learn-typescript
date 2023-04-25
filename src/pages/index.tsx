@@ -1,10 +1,11 @@
 import styles from '@/styles/Home.module.css';
-import Header from '../component/Header';
 import Link from 'next/link';
 import { Typography, Input, Button } from 'antd';
 import { useDispatch, useSelector } from 'react-redux';
 import { decrement, increment } from '@/store/counter/counterSlice';
 import { RootState } from '@/store';
+import Header from '@/Component/Header';
+
 export default function Home() {
 	const dispatch = useDispatch();
 	const count = useSelector((state: RootState) => state.counter.value);
