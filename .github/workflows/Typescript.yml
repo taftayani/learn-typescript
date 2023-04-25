@@ -19,4 +19,6 @@ jobs:
         run: |
           echo "Running linting format code"
           npm run lint
+        env: 
+          CI: true
   
