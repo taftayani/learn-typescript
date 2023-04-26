@@ -4,7 +4,7 @@ import { Typography, Input, Button } from 'antd';
 import { useDispatch, useSelector } from 'react-redux';
 import { decrement, increment } from '@/store/counter/counterSlice';
 import { RootState } from '@/store';
-import Header from '@/Component/Header';
+import Header from '@/component/Header';
 
 export default function Home() {
 	const dispatch = useDispatch();
