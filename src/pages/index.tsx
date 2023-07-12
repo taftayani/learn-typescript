@@ -19,6 +19,9 @@ export default function Home() {
 			<Button onClick={() => dispatch(decrement())}>kurang</Button>
 			<main className={styles.main}>
 				<Link href={'/detail'}>Go to details</Link>
+
+				<h1>tes 1</h1>
+				<h3>tes3</h3>
 			</main>
 		</>
 	);
