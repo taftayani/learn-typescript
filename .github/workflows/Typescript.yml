@@ -5,9 +5,9 @@ on:
     branches: [main]
 
 jobs:
-  typescriptTest:
+  build:
     name: Typescript,
-    runs-on: ubuntu-latest,
+    runs-on: ubuntu-latest
     steps:
       - name: Clone Repo
         uses: actions/checkout@v2
