@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next -p 8080",
+    "dev": "next -p 3030",
     "build": "next build",
-    "start": "next start -p 8080",
+    "start": "next start -p 3030",
     "lint": "next lint",
     "test": "jest",
     "coverage": "jest --collect-coverage"
@@ -17,6 +17,7 @@
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
     "antd": "^5.2.2",
+    "axios": "^1.6.2",
     "eslint": "8.32.0",
     "eslint-config-next": "13.1.5",
     "next": "13.1.5",

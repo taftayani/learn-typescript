@@ -8,7 +8,7 @@ const persistConfig = {
     whiteList: ['counter']
 }
 export const rootReducer = combineReducers({
-  counter:counterSlice.reducer
+  counter: counterSlice.reducer,
 });
 
 export const persisReducer =persistReducer(persistConfig,rootReducer)
